@@ -331,12 +331,7 @@
 
                                <select class="combobox form-control" id="sel" name="IdeaArea">
                                    <option value="" disabled selected style="display:none">Select an option</option>
-                                   @foreach (var item in Model.IdeaAreaCompact)
-                                   {
-                                       <optgroup label="@item.Text">
-                                           <option value="@item.Value">@item.Value</option>
-                                       </optgroup>
-                                   }
+                                   @Html.Raw(@Model.IdeaAreaBuildHtml)
                                </select>
 
 
@@ -369,7 +364,7 @@
                         <div >
                             <div class="form-group col-md-12">
                                 <div class="highlight" style="border: 2px dashed #c8c8c8; text-align:center; padding: 10px 12px; border-radius: 7px; line-height: 1.7;">
-                                    By clicking on the "Submit" button below, you certify that you have read and agreed to our innovation<a> terms and privacy policy</a>.
+                                    By clicking on the "Submit" button below, you certify that you have read and agreed to our innovation<a href="@Url.Action("Terms","IdeaPitch")"> terms and privacy policy</a>.
                                 </div>
                             </div>
                         </div>
