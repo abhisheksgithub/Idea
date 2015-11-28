@@ -23,8 +23,7 @@ namespace IdeaPitch.Processing
                                     new IdeaFragments() { Headers="Health", Text="Creating a world wide network, bringing people together by not having any distinction by race, caste or religion?", Value="Creating a world wide network, bringing people together by not having any distinction by race, caste or religion?" },
                                     new IdeaFragments() { Headers="Health", Text="Tracking down loved one's in a crowded or emergency situation at a cost effective manner?", Value="Tracking down loved one's in a crowded or emergency situation at a cost effective manner?" },
                                     new IdeaFragments() { Headers="Health", Text="Others", Value="Others" },
-                                    new IdeaFragments() { Headers="", Text="", Value="" },
-                                    new IdeaFragments() { Headers="", Text="", Value="" }};
+                                    new IdeaFragments() { Headers="Socail Service", Text="Others", Value="Others" }};
             var headers = (from it in userEntity.IdeaAreaCompact
                            select it.Headers).Distinct().ToList();
             var headersLength = headers.Count;
@@ -46,8 +45,8 @@ namespace IdeaPitch.Processing
                     }
 
                 }
-
-                userEntity.IdeaAreaBuildHtml.Append("</optgroup>");
+                if (k == 1)
+                    userEntity.IdeaAreaBuildHtml.Append("</optgroup>");
                 i++;
             }
         }
