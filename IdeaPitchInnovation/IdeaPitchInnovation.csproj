@@ -130,6 +130,7 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\bg1.jpg" />
     <Content Include="img\bg3.jpg" />
+    <Content Include="img\bg5.jpg" />
     <Content Include="img\callout.jpg" />
     <Content Include="img\innoBox.gif" />
     <Content Include="img\innoBox1.gif" />
