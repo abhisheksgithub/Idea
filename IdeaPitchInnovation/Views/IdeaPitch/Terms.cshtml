@@ -43,10 +43,10 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="index.html"  onclick = $("#menu-close").click(); >GIB</a>
+                <a href="@Url.Action("LandingScreen", "IdeaPitch")"  onclick = $("#menu-close").click(); >GIB</a>
             </li>
             <li>
-                <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
+                <a href="@Url.Action("LandingScreen", "IdeaPitch")" onclick = $("#menu-close").click(); >Home</a>
             </li>
         </ul>
     </nav>
@@ -58,7 +58,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <h1 style="font-family:fantasy; font-size:56px; display:inline"><a style="color:black" href="index.html">GIB</a><strong>|</strong> </h1><h2 style="color:#9fa2a6; display:inline">Terms & condition</h2>
+                <h1 style="font-family:fantasy; font-size:56px; display:inline"><a style="color:black" href="@Url.Action("LandingScreen", "IdeaPitch")">GIB</a><strong>|</strong> </h1><h2 style="color:#9fa2a6; display:inline">Terms & condition</h2>
                 <hr />
                 <div class="col-lg-12 ">
                     <br /><br />
@@ -109,25 +109,25 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>GetItBack</strong>
                     </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                     <p>An Innovation Community<br>Making a difference!</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        @*<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>*@
+                        @*<li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>*@
                         </li>
                     </ul>
                     <br>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; GetItBack 2014 &nbsp&nbsp|&nbsp&nbsp<a style="color:gray" href="TermsAndCondition.html">Terms</a></p>
+                    <p class="text-muted">Copyright &copy; GetItBack 2014 &nbsp&nbsp|&nbsp&nbsp<a style="color:gray" href="@Url.Action("Terms", "IdeaPitch")">Terms</a></p>
                 </div>
             </div>
         </div>
     </footer>
  
     <!-- jQuery -->
-    <script src="~/js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
     
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> 
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
     <!-- Custom Theme JavaScript -->
